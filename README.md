@@ -10,7 +10,7 @@ https://codesandbox.io/s/angry-elbakyan-s3xt7?file=/src/App.js
 npm install react-email-autocomplete-dropdown
 ```
 
-### Use
+### Usage
 ```javascript
 import React, { Component } from 'react';
 import Email from 'react-email-autocomplete-dropdown';
