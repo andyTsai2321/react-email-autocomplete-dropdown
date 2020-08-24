@@ -1,0 +1,54 @@
+# react-email-autocomplete-dropdown
+
+
+## Demo
+
+
+## Installation
+```bash
+npm install react-email-autocomplete-dropdown
+```
+
+### Use
+```javascript
+import React, { Component } from 'react';
+import Email from 'react-email-autocomplete-dropdown';
+import 'react-email-autocomplete-dropdown/lib/main.min.css';
+
+### Usage
+class App extends Component {
+  render() {
+    return (
+      <div">
+        <Email />
+      </div>
+    )
+  }
+}
+
+export default App;
+```
+
+### custom domains, value
+```javascript
+const domains = [
+  "test.com",
+  "hello.com"
+];
+class App extends Component {
+  render() {
+    return (
+      <div">
+        <Email domains={domains} value='test' />
+      </div>
+    )
+  }
+}
+
+
+export default App;
+```
+
+# License
+
+This software is released under the [**`MIT License`**](https://msudgh.mit-license.org/).
