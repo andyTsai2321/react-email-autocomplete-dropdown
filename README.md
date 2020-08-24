@@ -20,7 +20,7 @@ import 'react-email-autocomplete-dropdown/lib/main.min.css';
 class App extends Component {
   render() {
     return (
-      <div">
+      <div>
         <Email />
       </div>
     )
