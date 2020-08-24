@@ -1,8 +1,9 @@
 # react-email-autocomplete-dropdown
 
+![image](https://raw.githubusercontent.com/andyTsai2321/react-email-autocomplete-dropdown/master/images/demo_img.png)
 
 ## Demo
-
+https://codesandbox.io/s/angry-elbakyan-s3xt7?file=/src/App.js
 
 ## Installation
 ```bash
@@ -29,7 +30,7 @@ class App extends Component {
 export default App;
 ```
 
-### custom domains, value
+### Custom domains, value
 ```javascript
 const domains = [
   "test.com",
@@ -38,7 +39,7 @@ const domains = [
 class App extends Component {
   render() {
     return (
-      <div">
+      <div>
         <Email domains={domains} value='test' />
       </div>
     )
