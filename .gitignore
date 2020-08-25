@@ -3,4 +3,10 @@ node_modules
 
 lib
 
-config
+.gitignore
+
+.npmignore
+
+.babelrc
+
+.DS_Store
