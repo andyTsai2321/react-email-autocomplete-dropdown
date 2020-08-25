@@ -1,6 +1,6 @@
 {
   "name": "react-email-autocomplete-dropdown",
-  "version": "0.5.1",
+  "version": "0.5.5",
   "description": "react email autocomplete with dropdown",
   "author": "Andy Tsai 2321",
   "main": "lib/index.js",
@@ -15,6 +15,10 @@
     "email",
     "dropdown"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andyTsai2321/react-email-autocomplete-dropdown.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -24,6 +28,7 @@
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.1",
+    "gh-pages": "^3.1.0",
     "mini-css-extract-plugin": "^0.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

@@ -20,7 +20,7 @@ import 'react-email-autocomplete-dropdown/lib/main.min.css';
 class App extends Component {
   render() {
     return (
-      <div">
+      <div>
         <Email />
       </div>
     )
@@ -30,7 +30,7 @@ class App extends Component {
 export default App;
 ```
 
-### Custom domains, value
+### Custom domains
 ```javascript
 const domains = [
   "test.com",
@@ -40,7 +40,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Email domains={domains} value='test' />
+        <Email domains={domains} />
       </div>
     )
   }
