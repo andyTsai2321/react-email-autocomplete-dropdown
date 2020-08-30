@@ -5,3 +5,4 @@ example # 开发时预览代码
 src # 组件源代码目录
 .babelrc # babel 配置
 images
+.DS_Store

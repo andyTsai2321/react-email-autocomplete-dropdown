@@ -76,10 +76,17 @@ export default class Email extends Component {
   }
 
   selectEmail = (item) => {
-    this.setState((prevState) => ({
-      value: `${prevState.value.split("@")[0]}@${item}`,
-      dropdownVisible: false,
-    }));
+    const { dropdownOnClick } = this.props
+
+    this.setState(
+      (prevState) => {
+        return {
+          value: `${prevState.value.split("@")[0]}@${item}`,
+          dropdownVisible: false,
+        };
+      },
+      () => (dropdownOnClick ? dropdownOnClick(this.state.value) : "")
+    );
   };
 
   touchEnd(item) {
@@ -92,14 +99,14 @@ export default class Email extends Component {
   }
 
   render() {
-    const props = this.props;
+    const {dropdownOnClick, placeholder, disabled, ...props} = this.props;
     const { value, valid, dropdownVisible, domainsData } = this.state;
 
     return (
       valid && (
         <div className="email__wrap">
           <input
-            style={{width: '100%'}}
+            style={{ width: "100%" }}
             {...props}
             autoCapitalize="none"
             type="text"
@@ -107,6 +114,8 @@ export default class Email extends Component {
             value={value || ""}
             onChange={this.handleChange}
             onBlur={() => this.setState({ dropdownVisible: false })}
+            placeholder={placeholder}
+            disabled={disabled}
           />
           {dropdownVisible && (
             <ul className="email__dropdown">
@@ -116,8 +125,7 @@ export default class Email extends Component {
                   onTouchEnd={() => this.touchEnd(item)}
                   onMouseDown={() => this.mouseDown(item)}
                 >
-                  {value.split('@')[0]}@
-                  {item}
+                  {value.split("@")[0]}@{item}
                 </li>
               ))}
             </ul>

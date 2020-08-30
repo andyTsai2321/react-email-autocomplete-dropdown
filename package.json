@@ -1,6 +1,6 @@
 {
   "name": "react-email-autocomplete-dropdown",
-  "version": "0.5.5",
+  "version": "0.6",
   "description": "react email autocomplete with dropdown",
   "author": "Andy Tsai 2321",
   "main": "lib/index.js",

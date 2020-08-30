@@ -1,4 +1,4 @@
-.App{
+.App, .test{
     width: 200px;
 }
 
@@ -6,4 +6,8 @@
     margin-top: 20px;
     height: 400px;
     overflow: scroll;
+}
+
+body{
+    background: #000;
 }
